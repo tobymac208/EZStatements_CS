@@ -59,8 +59,6 @@ namespace EZStatements
             minutesForSaturday.Text = statementToModify.PayPeriod.TimeEntriesList.TimeEntriesList[6].Minutes + "";
 
             hourlyRate.Text = statementToModify.PayPeriod.PayRate + "";
-
-            isConsolidatedButton.Checked = statementToModify.Is_Consolidated;
         }
 
         private void isConsolidatedButton_CheckedChanged(object sender, EventArgs e)
@@ -70,9 +68,6 @@ namespace EZStatements
 
         private void saveChangesButton_Click(object sender, EventArgs e)
         {
-            // Load in all of the options to our Statement object.
-            statementToModify.Is_Consolidated = isConsolidatedButton.Checked;
-
             // Load in all of the entries
             statementToModify.PayPeriod.TimeEntriesList.TimeEntriesList[0].Hours =   int.Parse(hoursForSunday.Text );
             statementToModify.PayPeriod.TimeEntriesList.TimeEntriesList[0].Minutes = int.Parse(minutesForSunday.Text);
@@ -100,6 +95,8 @@ namespace EZStatements
 
             // Calculate the price of the statement
             statementToModify.Price_Of_Statement = statementToModify.PayPeriod.TimeEntriesList.TotalTime * statementToModify.PayPeriod.PayRate;
+
+            completeButton.Enabled = true;
         }
 
         private void completeButton_Click(object sender, EventArgs e)

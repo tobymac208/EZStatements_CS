@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyStatementForm));
             this.hourlyRate = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.minutesForSaturday = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -67,7 +66,6 @@
             this.hoursForSunday = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.isConsolidatedButton = new System.Windows.Forms.RadioButton();
             this.saveChangesButton = new System.Windows.Forms.Button();
             this.completeButton = new System.Windows.Forms.Button();
             this.errorLabel = new System.Windows.Forms.Label();
@@ -75,25 +73,16 @@
             // 
             // hourlyRate
             // 
-            this.hourlyRate.Location = new System.Drawing.Point(113, 475);
+            this.hourlyRate.Location = new System.Drawing.Point(214, 473);
             this.hourlyRate.Name = "hourlyRate";
             this.hourlyRate.Size = new System.Drawing.Size(115, 20);
             this.hourlyRate.TabIndex = 77;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(522, 412);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(0, 20);
-            this.label22.TabIndex = 76;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(14, 473);
+            this.label23.Location = new System.Drawing.Point(115, 471);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(97, 20);
             this.label23.TabIndex = 75;
@@ -408,23 +397,10 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Sunday";
             // 
-            // isConsolidatedButton
-            // 
-            this.isConsolidatedButton.AutoSize = true;
-            this.isConsolidatedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isConsolidatedButton.Location = new System.Drawing.Point(318, 473);
-            this.isConsolidatedButton.Name = "isConsolidatedButton";
-            this.isConsolidatedButton.Size = new System.Drawing.Size(137, 24);
-            this.isConsolidatedButton.TabIndex = 78;
-            this.isConsolidatedButton.TabStop = true;
-            this.isConsolidatedButton.Text = "Is Consolidated";
-            this.isConsolidatedButton.UseVisualStyleBackColor = true;
-            this.isConsolidatedButton.CheckedChanged += new System.EventHandler(this.isConsolidatedButton_CheckedChanged);
-            // 
             // saveChangesButton
             // 
             this.saveChangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveChangesButton.Location = new System.Drawing.Point(526, 26);
+            this.saveChangesButton.Location = new System.Drawing.Point(10, 529);
             this.saveChangesButton.Name = "saveChangesButton";
             this.saveChangesButton.Size = new System.Drawing.Size(114, 33);
             this.saveChangesButton.TabIndex = 79;
@@ -434,8 +410,9 @@
             // 
             // completeButton
             // 
+            this.completeButton.Enabled = false;
             this.completeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.completeButton.Location = new System.Drawing.Point(646, 26);
+            this.completeButton.Location = new System.Drawing.Point(130, 529);
             this.completeButton.Name = "completeButton";
             this.completeButton.Size = new System.Drawing.Size(114, 33);
             this.completeButton.TabIndex = 80;
@@ -448,7 +425,7 @@
             this.errorLabel.AutoSize = true;
             this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(556, 98);
+            this.errorLabel.Location = new System.Drawing.Point(183, 581);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(156, 20);
             this.errorLabel.TabIndex = 81;
@@ -458,13 +435,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 512);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(474, 610);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.completeButton);
             this.Controls.Add(this.saveChangesButton);
-            this.Controls.Add(this.isConsolidatedButton);
             this.Controls.Add(this.hourlyRate);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.minutesForSaturday);
             this.Controls.Add(this.label19);
@@ -513,7 +489,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox hourlyRate;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox minutesForSaturday;
         private System.Windows.Forms.Label label19;
@@ -550,7 +525,6 @@
         private System.Windows.Forms.TextBox hoursForSunday;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton isConsolidatedButton;
         private System.Windows.Forms.Button saveChangesButton;
         private System.Windows.Forms.Button completeButton;
         private System.Windows.Forms.Label errorLabel;

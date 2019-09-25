@@ -90,6 +90,9 @@ namespace EZStatements
 
             // Show this window again
             this.Show();
+
+            Clear_Fields();
+            Update_Data();
         }
 
         private void refreshButton_Click(object sender, EventArgs e)
@@ -174,6 +177,20 @@ namespace EZStatements
             Update_Data();
         }
 
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            // Open the "Settings" window
+            SettingsForm settingsForm = new SettingsForm(tracker);
+
+            this.Hide();
+
+            settingsForm.ShowDialog();
+
+            this.Show();
+
+            Clear_Fields();
+            Update_Data();
+        }
 
         // Utility functions
         private void Clear_Fields()

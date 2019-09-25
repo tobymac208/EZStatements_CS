@@ -13,6 +13,7 @@ namespace EZStatements.POCO.Statements
     {
         private Statements the_statements;
         private String title_of_tracker;
+        private double payRate;
 
         public StatementTracker(String title_of_tracker)
         {
@@ -30,6 +31,12 @@ namespace EZStatements.POCO.Statements
         {
             get { return title_of_tracker; }
             set { title_of_tracker = value; }
+        }
+
+        public double PayRate
+        {
+            get { return payRate; }
+            set { payRate = value; }
         }
 
         /// <summary>
@@ -59,17 +66,17 @@ namespace EZStatements.POCO.Statements
         {
             if (the_statements.List_Of_Statements.Count < 1)
             {
-                Console.WriteLine("No data to examine.");
-                return null; // return to the caller.
+                return "No data to examine";
             }
-
-            Console.WriteLine("Data for tracker \"" + title_of_tracker + "\"");
 
             // This is a total counter for all of the statements.
             int count = 0;
 
             // This is what will be returned
             String bufferedString = "";
+
+            // Add in the title
+            bufferedString += "Data for tracker \"" + title_of_tracker + "\"" + "\r\n\r\n";
 
             // Local variables for tracking calculations and totals
             double totalAmountOwed = 0;
@@ -107,10 +114,13 @@ namespace EZStatements.POCO.Statements
 
             bufferedString += "\r\n";
 
+            const double percentageForTaxes = 50;
+
             // Add the final data
             bufferedString += "Data collected from " + count + " entry/entries.\r\n";
             bufferedString += "Total amount owed: $" + Utility.Round_Double(totalAmountOwed) + "\r\n";
             bufferedString += "Total amount paid: $" + Utility.Round_Double(totalAmountPaid) + "\r\n";
+            bufferedString += "Total for withholdings, at a " + percentageForTaxes + "% rate: $" + Utility.Round_Double(totalAmountPaid * (percentageForTaxes/100)) + "\r\n";
             bufferedString += "% paid: " + Utility.Round_Double(percentagePaid) + "%\r\n\r\n";
 
             return bufferedString; // return the string to the user

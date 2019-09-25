@@ -32,7 +32,6 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.isConsolidatedButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.amountForPeriod = new System.Windows.Forms.TextBox();
@@ -40,7 +39,6 @@
             this.addButton = new System.Windows.Forms.Button();
             this.completeButton = new System.Windows.Forms.Button();
             this.errorLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // cancelButton
@@ -69,11 +67,6 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker.TabIndex = 2;
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // isConsolidatedButton
             // 
@@ -141,7 +134,7 @@
             this.errorLabel.AutoSize = true;
             this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(319, 421);
+            this.errorLabel.Location = new System.Drawing.Point(63, 301);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(156, 20);
             this.errorLabel.TabIndex = 10;
@@ -151,7 +144,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(302, 330);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.completeButton);
             this.Controls.Add(this.addButton);
@@ -166,7 +160,6 @@
             this.Name = "AddNewStatementForm";
             this.Text = "AddNewStatementForm";
             this.Load += new System.EventHandler(this.AddNewStatementForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +170,6 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.RadioButton isConsolidatedButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox amountForPeriod;

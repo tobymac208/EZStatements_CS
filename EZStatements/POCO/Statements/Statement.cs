@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using EZStatements.POCO.PayPeriod;
+using EZStatements;
 
 namespace EZStatements.POCO.Statements
 {
@@ -52,7 +53,7 @@ namespace EZStatements.POCO.Statements
 
         public double Price_Of_Statement
         {
-            get { return payPeriod.TimeEntriesList.TotalTime * payPeriod.PayRate; }
+            get { return Utility.Round_Double(payPeriod.TimeEntriesList.TotalTime * payPeriod.PayRate); }
             set { price_of_statement = value; }
         }
 

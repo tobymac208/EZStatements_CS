@@ -386,7 +386,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(19, 500);
+            this.addButton.Location = new System.Drawing.Point(14, 528);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(78, 33);
             this.addButton.TabIndex = 35;
@@ -398,7 +398,7 @@
             // 
             this.completeButton.Enabled = false;
             this.completeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.completeButton.Location = new System.Drawing.Point(103, 500);
+            this.completeButton.Location = new System.Drawing.Point(98, 528);
             this.completeButton.Name = "completeButton";
             this.completeButton.Size = new System.Drawing.Size(78, 33);
             this.completeButton.TabIndex = 36;
@@ -408,7 +408,7 @@
             // 
             // hourlyRate
             // 
-            this.hourlyRate.Location = new System.Drawing.Point(611, 388);
+            this.hourlyRate.Location = new System.Drawing.Point(112, 464);
             this.hourlyRate.Name = "hourlyRate";
             this.hourlyRate.Size = new System.Drawing.Size(115, 20);
             this.hourlyRate.TabIndex = 39;
@@ -417,7 +417,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(523, 416);
+            this.label22.Location = new System.Drawing.Point(29, 493);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 20);
             this.label22.TabIndex = 38;
@@ -426,7 +426,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(512, 386);
+            this.label23.Location = new System.Drawing.Point(13, 462);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(97, 20);
             this.label23.TabIndex = 37;
@@ -435,11 +435,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(19, 465);
+            this.button1.Location = new System.Drawing.Point(182, 528);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 23);
+            this.button1.Size = new System.Drawing.Size(162, 33);
             this.button1.TabIndex = 40;
-            this.button1.Text = "Make ZERO";
+            this.button1.Text = "Zero out fields";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -448,7 +448,7 @@
             this.errorLabel.AutoSize = true;
             this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(315, 513);
+            this.errorLabel.Location = new System.Drawing.Point(169, 583);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(156, 20);
             this.errorLabel.TabIndex = 41;
@@ -458,7 +458,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(480, 612);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.hourlyRate);
