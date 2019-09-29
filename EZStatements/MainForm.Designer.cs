@@ -61,7 +61,7 @@
             // textArea
             // 
             this.textArea.BackColor = System.Drawing.SystemColors.Info;
-            this.textArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textArea.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textArea.Location = new System.Drawing.Point(17, 52);
             this.textArea.Margin = new System.Windows.Forms.Padding(4);
             this.textArea.Multiline = true;

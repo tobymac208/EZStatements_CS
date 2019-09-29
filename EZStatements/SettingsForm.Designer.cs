@@ -40,7 +40,7 @@
             this.errorLabel.AutoSize = true;
             this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(171, 104);
+            this.errorLabel.Location = new System.Drawing.Point(171, 113);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(156, 20);
             this.errorLabel.TabIndex = 122;
@@ -50,7 +50,7 @@
             // 
             this.completeButton.Enabled = false;
             this.completeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.completeButton.Location = new System.Drawing.Point(132, 46);
+            this.completeButton.Location = new System.Drawing.Point(132, 55);
             this.completeButton.Name = "completeButton";
             this.completeButton.Size = new System.Drawing.Size(114, 33);
             this.completeButton.TabIndex = 121;
@@ -61,7 +61,7 @@
             // saveChangesButton
             // 
             this.saveChangesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveChangesButton.Location = new System.Drawing.Point(12, 46);
+            this.saveChangesButton.Location = new System.Drawing.Point(12, 55);
             this.saveChangesButton.Name = "saveChangesButton";
             this.saveChangesButton.Size = new System.Drawing.Size(114, 33);
             this.saveChangesButton.TabIndex = 120;
@@ -71,7 +71,7 @@
             // 
             // titleOfTracker
             // 
-            this.titleOfTracker.Location = new System.Drawing.Point(135, 11);
+            this.titleOfTracker.Location = new System.Drawing.Point(163, 11);
             this.titleOfTracker.Name = "titleOfTracker";
             this.titleOfTracker.Size = new System.Drawing.Size(115, 20);
             this.titleOfTracker.TabIndex = 124;
@@ -91,7 +91,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(475, 139);
+            this.ClientSize = new System.Drawing.Size(475, 146);
             this.Controls.Add(this.titleOfTracker);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.errorLabel);
