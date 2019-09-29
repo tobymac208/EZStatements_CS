@@ -23,7 +23,7 @@ namespace EZStatements
 
             tracker = FileOperations.DeserializeFile();
 
-            this.Text = "EZStatements v1.1";
+            this.Text = "EZStatements v1.1: " + tracker.Title_Of_Tracker;
 
             Update_Comboboxes();
 
@@ -199,6 +199,7 @@ namespace EZStatements
 
             this.Show();
 
+            this.Text = "EZStatements v1.1: " + tracker.Title_Of_Tracker;
             Clear_Fields();
             Update_Data();
         }
