@@ -104,6 +104,12 @@ namespace EZStatements
 
         private void flipButton_Click(object sender, EventArgs e)
         {
+            if (flipSelectionCombobox.SelectedItem == null)
+            {
+                errorLabel.Text = "Nothing selected.";
+                return;
+            }
+
             // Get the data from the user
             string dateToFlip = flipSelectionCombobox.SelectedItem.ToString();
 
@@ -125,6 +131,12 @@ namespace EZStatements
 
         private void removeButton_Click(object sender, EventArgs e)
         {
+            if (removeSelectionCombobox.SelectedItem == null)
+            {
+                errorLabel.Text = "Nothing selected.";
+                return;
+            }
+
             // Get the data from the user
             string dateToRemove = removeSelectionCombobox.SelectedItem.ToString();
 
@@ -147,6 +159,12 @@ namespace EZStatements
         // Modify a statement.
         private void editButton_Click(object sender, EventArgs e)
         {
+            if (editSelectionCombobox.SelectedItem == null)
+            {
+                errorLabel.Text = "Nothing selected.";
+                return;
+            }
+
             if (editSelectionCombobox.SelectedItem.ToString().Trim() == "")
             {
                 errorLabel.Text = "No dates to modify.";
