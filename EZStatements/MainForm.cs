@@ -25,6 +25,8 @@ namespace EZStatements
 
             this.Text = "EZStatements v1.1";
 
+            Update_Comboboxes();
+
             Update_Data();
         }
 
@@ -103,66 +105,56 @@ namespace EZStatements
         private void flipButton_Click(object sender, EventArgs e)
         {
             // Get the data from the user
-            int numberToFlip = int.Parse(numberToFlipTextField.Text);
+            string dateToFlip = flipSelectionCombobox.SelectedItem.ToString();
 
-            // Is the a valid number?
-            if (numberToFlip >= tracker.The_Statements.List_Of_Statements.Count || numberToFlip < 0) // NOPE
+            if (dateToFlip.Trim().Equals(""))
             {
-                errorLabel.Text = "Error attempting to flip. Invalid index!";
-                return; // exit the function
+                errorLabel.Text = "No dates to flip.";
+                return;
             }
 
-            // Get the value of that boolean
-            bool currentBool = tracker.The_Statements.List_Of_Statements[numberToFlip].Is_Consolidated;
-
-            // Flip that boolean
-            tracker.The_Statements.List_Of_Statements[numberToFlip].Is_Consolidated = !currentBool;
+            tracker.FlipByDate(dateToFlip);
 
             // Tell the user is worked
-            errorLabel.Text = "Value for " + numberToFlip + " has been flipped.";
+            errorLabel.Text = "Value for " + dateToFlip + " has been flipped.";
 
             Clear_Fields(); // Clear the fields
             Update_Data(); // update the screen
+            Update_Comboboxes();
         }
 
         private void removeButton_Click(object sender, EventArgs e)
         {
             // Get the data from the user
-            int numberToRemove = int.Parse(numberToRemoveTextField.Text);
+            string dateToRemove = removeSelectionCombobox.SelectedItem.ToString();
 
-            // Is the a valid number?
-            if (numberToRemove >= tracker.The_Statements.List_Of_Statements.Count || numberToRemove < 0) // NOPE
+            if (dateToRemove.Trim().Equals(""))
             {
-                errorLabel.Text = "Error attempting to flip. Invalid index!";
-                return; // exit the function
+                errorLabel.Text = "No dates to remove.";
+                return;
             }
 
-            // Flip that boolean
-            tracker.The_Statements.List_Of_Statements.RemoveAt(numberToRemove);
+            tracker.RemoveByDate(dateToRemove);
 
             // Tell the user is worked
-            errorLabel.Text = "Value for " + numberToRemove + " has been removed.";
+            errorLabel.Text = "Value for " + dateToRemove + " has been removed.";
 
             Clear_Fields(); // Clear the fields
             Update_Data(); // update the screen
+            Update_Comboboxes();
         }
 
         // Modify a statement.
         private void editButton_Click(object sender, EventArgs e)
         {
-            if (numberToChangeTextField.Text.Trim() == "")
+            if (editSelectionCombobox.SelectedItem.ToString().Trim() == "")
             {
+                errorLabel.Text = "No dates to modify.";
                 return;
             }
-            // Grab the number that was entered.
-            int valueToChange = int.Parse(numberToChangeTextField.Text);
 
-            if (valueToChange >= tracker.The_Statements.List_Of_Statements.Count || valueToChange < 0)
-            {
-                errorLabel.Text = "Invalid entry.";
-                // Leave the method.
-                return;
-            }
+            // Grab the number that was entered.
+            int valueToChange = tracker.FindIndexByDate(editSelectionCombobox.Text);
 
             // Open a Modify window to change the statement selected -- chooses Statement directly from list
             ModifyStatementForm form = new ModifyStatementForm(tracker.The_Statements.List_Of_Statements[valueToChange]);
@@ -175,6 +167,7 @@ namespace EZStatements
             // Clear all of the fields.
             Clear_Fields();
             Update_Data();
+            Update_Comboboxes();
         }
 
         private void settingsButton_Click(object sender, EventArgs e)
@@ -192,17 +185,42 @@ namespace EZStatements
             Update_Data();
         }
 
+        // Called when someone has changed what's in the box
+        private void entrySelectionCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
         // Utility functions
         private void Clear_Fields()
         {
-            numberToFlipTextField.Text = "";
-            numberToRemoveTextField.Text = "";
-            numberToChangeTextField.Text = "";
+            flipSelectionCombobox.Text = "";
+            removeSelectionCombobox.Text = "";
+            editSelectionCombobox.Text = "";
         }
 
         private void Update_Data()
         {
             textArea.Text = tracker.StatementDataToString();
+        }
+
+        private void Update_Comboboxes()
+        {
+            flipSelectionCombobox.Items.Clear();
+            removeSelectionCombobox.Items.Clear();
+            editSelectionCombobox.Items.Clear();
+            // Add the dates to the list
+            foreach (Statement statement in tracker.The_Statements.List_Of_Statements)
+            {
+                flipSelectionCombobox.Items.Add(statement.Date);
+                removeSelectionCombobox.Items.Add(statement.Date);
+                editSelectionCombobox.Items.Add(statement.Date);
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

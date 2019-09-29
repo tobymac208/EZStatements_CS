@@ -59,8 +59,52 @@ namespace EZStatements.POCO.Statements
             return the_statements.RemoveStatement(value);
         }
 
+        public Boolean RemoveByDate(String date)
+        {
+            for (int i = 0, length = The_Statements.List_Of_Statements.Count; i < length; i++)
+            {
+                if (The_Statements.List_Of_Statements[i].Date.Equals(date))
+                {
+                    The_Statements.List_Of_Statements.RemoveAt(i);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public Boolean FlipByDate(String date)
+        {
+            for (int i = 0, length = The_Statements.List_Of_Statements.Count; i < length; i++)
+            {
+                if (The_Statements.List_Of_Statements[i].Date.Equals(date))
+                {
+                    // Flip the boolean value
+                    bool temp = The_Statements.List_Of_Statements[i].Is_Consolidated;
+                    The_Statements.List_Of_Statements[i].Is_Consolidated = !temp;
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public int FindIndexByDate(String date)
+        {
+            for (int i = 0, length = The_Statements.List_Of_Statements.Count; i < length; i++)
+            {
+                if (The_Statements.List_Of_Statements[i].Date.Equals(date))
+                {
+                    return i; // found it!
+                }
+            }
+
+            return -1; // didn't find it
+        }
+
         /// <summary>
-        /// Print out a detailed summary of what's in the 
+        /// Prints out a detailed summary of what's in the list.
         /// </summary>
         public String StatementDataToString()
         {
@@ -124,6 +168,36 @@ namespace EZStatements.POCO.Statements
             bufferedString += "% paid: " + Utility.Round_Double(percentagePaid) + "%\r\n\r\n";
 
             return bufferedString; // return the string to the user
+        }
+
+        /// <summary>
+        /// Prints out a specific Statement's data.
+        /// </summary>
+        /// <returns></returns>
+        public String SelectedStatementDataToString(Statement value)
+        {
+            String stringToReturn = "";
+
+            stringToReturn += "Data for tracker \"" + value.Date + "\"" + "\r\n\r\n";
+
+            stringToReturn += "\r\n\r\tAmount: $" + value.Price_Of_Statement +
+                        "\r\n\r\tConsolidated: " + value.Is_Consolidated +
+                        "\r\n\r\tHourly rate: " + value.PayPeriod.PayRate + "\r\n";
+
+            return stringToReturn;
+        }
+
+        public Statement findStatementByDate(String date)
+        {
+            foreach (Statement statement in The_Statements.List_Of_Statements)
+            {
+                if (statement.Date.Equals(date))
+                {
+                    return statement;
+                }
+            }
+
+            return null;
         }
 
         /// <summary>
