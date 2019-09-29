@@ -48,7 +48,7 @@
             // 
             // saveAndExitButton
             // 
-            this.saveAndExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveAndExitButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveAndExitButton.Location = new System.Drawing.Point(134, 13);
             this.saveAndExitButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveAndExitButton.Name = "saveAndExitButton";
@@ -74,7 +74,7 @@
             // 
             // printButton
             // 
-            this.printButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printButton.Location = new System.Drawing.Point(17, 552);
             this.printButton.Margin = new System.Windows.Forms.Padding(4);
             this.printButton.Name = "printButton";
@@ -86,7 +86,7 @@
             // 
             // addStatementButton
             // 
-            this.addStatementButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStatementButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addStatementButton.Location = new System.Drawing.Point(124, 552);
             this.addStatementButton.Margin = new System.Windows.Forms.Padding(4);
             this.addStatementButton.Name = "addStatementButton";
@@ -98,8 +98,8 @@
             // 
             // flipButton
             // 
-            this.flipButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flipButton.Location = new System.Drawing.Point(426, 614);
+            this.flipButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flipButton.Location = new System.Drawing.Point(454, 614);
             this.flipButton.Margin = new System.Windows.Forms.Padding(4);
             this.flipButton.Name = "flipButton";
             this.flipButton.Size = new System.Drawing.Size(100, 28);
@@ -110,8 +110,8 @@
             // 
             // removeButton
             // 
-            this.removeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removeButton.Location = new System.Drawing.Point(426, 649);
+            this.removeButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.Location = new System.Drawing.Point(454, 649);
             this.removeButton.Margin = new System.Windows.Forms.Padding(4);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(100, 28);
@@ -123,19 +123,19 @@
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
-            this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(120, 728);
+            this.errorLabel.Location = new System.Drawing.Point(194, 724);
             this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(156, 20);
+            this.errorLabel.Size = new System.Drawing.Size(178, 19);
             this.errorLabel.TabIndex = 9;
             this.errorLabel.Text = "Everything\'s working.";
             // 
             // editButton
             // 
-            this.editButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editButton.Location = new System.Drawing.Point(426, 686);
+            this.editButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editButton.Location = new System.Drawing.Point(454, 686);
             this.editButton.Margin = new System.Windows.Forms.Padding(4);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(100, 26);
@@ -146,7 +146,7 @@
             // 
             // settingsButton
             // 
-            this.settingsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsButton.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsButton.Location = new System.Drawing.Point(17, 13);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(4);
             this.settingsButton.Name = "settingsButton";
@@ -159,53 +159,56 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(13, 618);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(167, 20);
+            this.label11.Size = new System.Drawing.Size(188, 19);
             this.label11.TabIndex = 57;
             this.label11.Text = "Flip \"consolidated\" (#):";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 658);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 20);
+            this.label1.Size = new System.Drawing.Size(208, 19);
             this.label1.TabIndex = 58;
             this.label1.Text = "Remove a statement (#):";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 688);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 20);
+            this.label2.Size = new System.Drawing.Size(177, 19);
             this.label2.TabIndex = 59;
             this.label2.Text = "Edit a statement (#): ";
             // 
             // editSelectionCombobox
             // 
+            this.editSelectionCombobox.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editSelectionCombobox.FormattingEnabled = true;
-            this.editSelectionCombobox.Location = new System.Drawing.Point(195, 686);
+            this.editSelectionCombobox.Location = new System.Drawing.Point(223, 686);
             this.editSelectionCombobox.Name = "editSelectionCombobox";
             this.editSelectionCombobox.Size = new System.Drawing.Size(224, 24);
             this.editSelectionCombobox.TabIndex = 63;
             // 
             // removeSelectionCombobox
             // 
+            this.removeSelectionCombobox.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeSelectionCombobox.FormattingEnabled = true;
-            this.removeSelectionCombobox.Location = new System.Drawing.Point(195, 653);
+            this.removeSelectionCombobox.Location = new System.Drawing.Point(223, 653);
             this.removeSelectionCombobox.Name = "removeSelectionCombobox";
             this.removeSelectionCombobox.Size = new System.Drawing.Size(224, 24);
             this.removeSelectionCombobox.TabIndex = 64;
             // 
             // flipSelectionCombobox
             // 
+            this.flipSelectionCombobox.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flipSelectionCombobox.FormattingEnabled = true;
-            this.flipSelectionCombobox.Location = new System.Drawing.Point(195, 618);
+            this.flipSelectionCombobox.Location = new System.Drawing.Point(223, 618);
             this.flipSelectionCombobox.Name = "flipSelectionCombobox";
             this.flipSelectionCombobox.Size = new System.Drawing.Size(224, 24);
             this.flipSelectionCombobox.TabIndex = 65;
@@ -216,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(559, 753);
+            this.ClientSize = new System.Drawing.Size(563, 753);
             this.Controls.Add(this.flipSelectionCombobox);
             this.Controls.Add(this.removeSelectionCombobox);
             this.Controls.Add(this.editSelectionCombobox);
@@ -232,7 +235,7 @@
             this.Controls.Add(this.printButton);
             this.Controls.Add(this.textArea);
             this.Controls.Add(this.saveAndExitButton);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";

@@ -43,9 +43,10 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(13, 13);
+            this.cancelButton.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelButton.Location = new System.Drawing.Point(15, 14);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(87, 25);
             this.cancelButton.TabIndex = 0;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -54,27 +55,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 70);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(53, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Date:";
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(67, 70);
+            this.dateTimePicker.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Location = new System.Drawing.Point(78, 75);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.Size = new System.Drawing.Size(241, 21);
             this.dateTimePicker.TabIndex = 2;
             // 
             // isConsolidatedButton
             // 
             this.isConsolidatedButton.AutoSize = true;
-            this.isConsolidatedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.isConsolidatedButton.Location = new System.Drawing.Point(17, 129);
+            this.isConsolidatedButton.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isConsolidatedButton.Location = new System.Drawing.Point(20, 139);
             this.isConsolidatedButton.Name = "isConsolidatedButton";
-            this.isConsolidatedButton.Size = new System.Drawing.Size(137, 24);
+            this.isConsolidatedButton.Size = new System.Drawing.Size(150, 23);
             this.isConsolidatedButton.TabIndex = 4;
             this.isConsolidatedButton.TabStop = true;
             this.isConsolidatedButton.Text = "Is Consolidated";
@@ -84,25 +86,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 195);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Price:";
             // 
             // amountForPeriod
             // 
-            this.amountForPeriod.Location = new System.Drawing.Point(67, 194);
+            this.amountForPeriod.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountForPeriod.Location = new System.Drawing.Point(78, 209);
             this.amountForPeriod.Name = "amountForPeriod";
-            this.amountForPeriod.Size = new System.Drawing.Size(118, 20);
+            this.amountForPeriod.Size = new System.Drawing.Size(151, 21);
             this.amountForPeriod.TabIndex = 6;
             // 
             // addPayPeriodButton
             // 
-            this.addPayPeriodButton.Location = new System.Drawing.Point(191, 192);
+            this.addPayPeriodButton.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addPayPeriodButton.Location = new System.Drawing.Point(237, 207);
             this.addPayPeriodButton.Name = "addPayPeriodButton";
-            this.addPayPeriodButton.Size = new System.Drawing.Size(97, 23);
+            this.addPayPeriodButton.Size = new System.Drawing.Size(113, 25);
             this.addPayPeriodButton.TabIndex = 7;
             this.addPayPeriodButton.Text = "Add Pay Period";
             this.addPayPeriodButton.UseVisualStyleBackColor = true;
@@ -110,9 +114,10 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(17, 248);
+            this.addButton.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(20, 267);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(87, 25);
             this.addButton.TabIndex = 8;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -121,9 +126,10 @@
             // completeButton
             // 
             this.completeButton.Enabled = false;
-            this.completeButton.Location = new System.Drawing.Point(99, 248);
+            this.completeButton.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.completeButton.Location = new System.Drawing.Point(115, 267);
             this.completeButton.Name = "completeButton";
-            this.completeButton.Size = new System.Drawing.Size(75, 23);
+            this.completeButton.Size = new System.Drawing.Size(87, 25);
             this.completeButton.TabIndex = 9;
             this.completeButton.Text = "Complete";
             this.completeButton.UseVisualStyleBackColor = true;
@@ -132,20 +138,20 @@
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
-            this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.errorLabel.Location = new System.Drawing.Point(63, 301);
+            this.errorLabel.Location = new System.Drawing.Point(73, 324);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(156, 20);
+            this.errorLabel.Size = new System.Drawing.Size(178, 19);
             this.errorLabel.TabIndex = 10;
             this.errorLabel.Text = "Everything\'s working.";
             // 
             // AddNewStatementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(302, 330);
+            this.ClientSize = new System.Drawing.Size(352, 355);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.completeButton);
             this.Controls.Add(this.addButton);
@@ -156,6 +162,7 @@
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancelButton);
+            this.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddNewStatementForm";
             this.Text = "AddNewStatementForm";
