@@ -13,7 +13,7 @@ namespace EZStatements
     static class FileOperations
     {
         // TODO: Set a filename
-        private static String FILENAME = "C:\\Users\\Nik\\Source\\Repos\\EZStatements\\EZStatements\\Resources\\data.dat";
+        private static String FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
 
         public static void SerializeFile(StatementTracker value)
         {
