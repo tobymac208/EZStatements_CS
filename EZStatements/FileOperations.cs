@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using EZStatements.POCO.Statements;
+using System.IO;
+using System.Reflection;
 
 namespace EZStatements
 {
     static class FileOperations
     {
-        // TODO: Set a filename
-        private static String FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
+        // The filename
+        private static string FILENAME = @"..\..\Resources\data.dat";
 
         public static void SerializeFile(StatementTracker value)
         {
