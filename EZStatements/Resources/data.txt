@@ -1,0 +1,142 @@
+Data for tracker "Alexander Home Services"
+
+[0] Monday, May 28, 2018
+	Amount: $1227
+	Consolidated: True
+	Hourly rate: 1227
+[1] Friday, July 20, 2018
+	Amount: $1605
+	Consolidated: True
+	Hourly rate: 1605
+[2] Friday, July 27, 2018
+	Amount: $34
+	Consolidated: True
+	Hourly rate: 34
+[3] Tuesday, August 14, 2018
+	Amount: $1912
+	Consolidated: True
+	Hourly rate: 1912
+[4] Sunday, September 30, 2018
+	Amount: $590
+	Consolidated: True
+	Hourly rate: 590
+[5] Sunday, May 6, 2018
+	Amount: $310
+	Consolidated: True
+	Hourly rate: 310
+[6] Friday, May 24, 2019
+	Amount: $509
+	Consolidated: True
+	Hourly rate: 509
+[7] Thursday, June 6, 2019
+	Amount: $600
+	Consolidated: True
+	Hourly rate: 600
+[8] Tuesday, June 11, 2019
+	Amount: $400
+	Consolidated: True
+	Hourly rate: 400
+[9] Saturday, June 22, 2019
+	Amount: $383.67
+	Consolidated: True
+	Hourly rate: 383.67
+[10] Friday, July 19, 2019
+	Amount: $1573.01
+	Consolidated: True
+	Hourly rate: 1573.01
+[11] Friday, August 2, 2019
+	Amount: $1236.67
+	Consolidated: True
+	Hourly rate: 1236.67
+[12] Friday, August 9, 2019
+	Amount: $631.8
+	Consolidated: True
+	Hourly rate: 631.8
+[13] Friday, August 16, 2019
+	Amount: $770
+	Consolidated: True
+	Hourly rate: 770
+[14] Friday, August 23, 2019
+	Amount: $682.2
+	Consolidated: True
+	Hourly rate: 682.2
+[15] Friday, August 30, 2019
+	Amount: $714.67
+	Consolidated: True
+	Hourly rate: 714.67
+[16] Friday, September 6, 2019
+	Amount: $655.5
+	Consolidated: True
+	Hourly rate: 23
+[17] Friday, September 13, 2019
+	Amount: $602.98
+	Consolidated: True
+	Hourly rate: 23
+[18] Friday, September 20, 2019
+	Amount: $602.22
+	Consolidated: True
+	Hourly rate: 23
+[19] Friday, September 27, 2019
+	Amount: $1031.93
+	Consolidated: True
+	Hourly rate: 23
+[20] Friday, October 4, 2019
+	Amount: $503.32
+	Consolidated: True
+	Hourly rate: 23
+[21] Friday, October 11, 2019
+	Amount: $967.53
+	Consolidated: True
+	Hourly rate: 23
+[22] Friday, October 18, 2019
+	Amount: $925.75
+	Consolidated: True
+	Hourly rate: 23
+[23] Friday, October 25, 2019
+	Amount: $793.5
+	Consolidated: True
+	Hourly rate: 23
+[24] Friday, November 1, 2019
+	Amount: $868.63
+	Consolidated: True
+	Hourly rate: 23
+[25] Friday, November 8, 2019
+	Amount: $766.67
+	Consolidated: True
+	Hourly rate: 23
+[26] Friday, November 15, 2019
+	Amount: $652.43
+	Consolidated: True
+	Hourly rate: 23
+[27] Thursday, December 5, 2019
+	Amount: $462.3
+	Consolidated: True
+	Hourly rate: 23
+[28] Friday, December 13, 2019
+	Amount: $260.67
+	Consolidated: True
+	Hourly rate: 23
+[29] Saturday, January 11, 2020
+	Amount: $48.68
+	Consolidated: True
+	Hourly rate: 23
+[30] Friday, January 31, 2020
+	Amount: $296.1
+	Consolidated: False
+	Hourly rate: 18
+[31] Saturday, February 8, 2020
+	Amount: $255.68
+	Consolidated: False
+	Hourly rate: 23
+[32] Saturday, February 15, 2020
+	Amount: $350.75
+	Consolidated: False
+	Hourly rate: 23
+
+Data collected from 33 entry/entries.
+Total amount owed: $902.53
+Total amount paid: $22321.13
+Total for withholdings, at a 50% rate: $11160.56
+% paid: 96.11%
+
+

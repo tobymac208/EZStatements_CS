@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.IO;
+﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using EZStatements.POCO.Statements;
+using EZStatements.POCO.PayPeriod;
 
 namespace EZStatements
 {
     static class FileOperations
     {
         // TODO: Set a filename
-        private static String FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
+        private static string FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
 
         public static void SerializeFile(StatementTracker value)
         {
@@ -42,5 +37,18 @@ namespace EZStatements
             return tracker;
         }
 
+        /// <summary>
+        ///  Write data to a file as text.
+        /// </summary>
+        public static void WriteRawData(StatementTracker value)
+        {
+            // TODO: Set a filename
+            string TXT_FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.txt";
+
+            using (StreamWriter sw = new StreamWriter(TXT_FILENAME))
+            {
+                sw.WriteLine(value.StatementDataToString());
+            }
+        }
     }
 }
