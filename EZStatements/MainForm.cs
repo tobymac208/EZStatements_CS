@@ -51,6 +51,9 @@ namespace EZStatements
             // Write the data to the correct file.
             FileOperations.SerializeFile(tracker);
 
+            // Write raw data to a file
+            FileOperations.WriteRawData(tracker);
+
             Console.WriteLine("Data written to file.");
             Console.WriteLine("File closing.");
 
