@@ -2,6 +2,8 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using EZStatements.POCO.Statements;
 using EZStatements.POCO.PayPeriod;
+using System.IO;
+using System.Reflection;
 
 namespace EZStatements
 {
@@ -9,6 +11,8 @@ namespace EZStatements
     {
         // TODO: Set a filename
         private static string FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
+        // The filename
+        private static string FILENAME = @"..\..\Resources\data.dat";
 
         public static void SerializeFile(StatementTracker value)
         {
