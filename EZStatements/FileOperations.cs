@@ -10,7 +10,7 @@ namespace EZStatements
     static class FileOperations
     {
         // TODO: Set a filename
-        private static string FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
+        // private static string FILENAME = "C:\\Users\\ferna\\Source\\Repos\\EZStatements_CS\\EZStatements\\Resources\\data.dat";
         // The filename
         private static string FILENAME = @"..\..\Resources\data.dat";
 
