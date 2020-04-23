@@ -135,6 +135,7 @@ namespace EZStatements.POCO.Statements
                 bufferedString += "[" + count + "] " + current_statement.Date +
                         "\r\n\r\tAmount: $" + current_statement.Price_Of_Statement +
                         "\r\n\r\tConsolidated: " + current_statement.Is_Consolidated +
+                        "\r\n\r\tHours: " + current_statement.PayPeriod.TimeEntriesList.TotalTime +
                         "\r\n\r\tHourly rate: " + current_statement.PayPeriod.PayRate + "\r\n";
 
                 // Add to the total number of Statements
