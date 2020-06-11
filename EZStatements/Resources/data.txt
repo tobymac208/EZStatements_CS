@@ -222,14 +222,24 @@ Data for tracker "Alexander Home Services"
 	Hourly rate: 23
 [44] Friday, May 29, 2020
 	Amount: $145.28
-	Consolidated: False
+	Consolidated: True
 	Hours: 6.31666666666667
 	Hourly rate: 23
+[45] Saturday, June 6, 2020
+	Amount: $525.93
+	Consolidated: True
+	Hours: 22.8666666666667
+	Hourly rate: 23
+[46] Saturday, June 13, 2020
+	Amount: $240.35
+	Consolidated: False
+	Hours: 10.45
+	Hourly rate: 23
 
-Data collected from 45 entry/entries.
-Total amount owed: $145.28
-Total amount paid: $30096.06
-Total for withholdings, at a 50% rate: $15048.03
-% paid: 99.52%
+Data collected from 47 entry/entries.
+Total amount owed: $240.35
+Total amount paid: $30767.27
+Total for withholdings, at a 50% rate: $15383.63
+% paid: 99.22%
 
 
